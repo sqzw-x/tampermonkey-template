@@ -19,7 +19,8 @@
     "preview": "vite preview",
     "ci": "biome ci",
     "lint": "biome lint --write",
-    "format": "biome format --write"
+    "format": "biome format --write",
+    "dep": "ncu -i --format group"
   },
   "dependencies": {
     "@ant-design/icons": "^6.1.0",
