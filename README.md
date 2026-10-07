@@ -13,7 +13,6 @@
 ## 环境要求
 
 - Node.js `^20.19.0 || >=22.12.0`
-- pnpm `>=12`（`pnpm-workspace.yaml` 使用 `allowBuilds` 放行 `@swc/core` 的 postinstall）
 - 推荐安装 VS Code 扩展 [Oxc](https://marketplace.visualstudio.com/items?itemName=oxc.oxc-vscode)（`.vscode/extensions.json` 已声明推荐）
 
 ## 使用

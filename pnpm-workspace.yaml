@@ -1,3 +1,0 @@
-# @swc/core 的 postinstall 用于安装原生绑定，必须允许执行（pnpm v12 起默认拦截 postinstall）
-allowBuilds:
-  "@swc/core": true
