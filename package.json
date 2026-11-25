@@ -14,27 +14,27 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "ci": "oxlint . && oxfmt --check .",
+    "check": "oxlint . && oxfmt --check .",
     "lint": "oxlint --fix .",
     "format": "oxfmt --write .",
-    "typecheck": "tsc --noEmit",
+    "typecheck": "tsc -b",
     "dep": "ncu -i --format group"
   },
   "dependencies": {
-    "react": "^19.3.0",
-    "react-dom": "^19.3.0"
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1"
   },
   "devDependencies": {
-    "@types/node": "^26.6.4",
+    "@types/node": "^26.6.6",
     "@types/react": "^19.3.0",
     "@types/react-dom": "^19.3.0",
     "@types/tampermonkey": "^5.5.0",
-    "@vitejs/plugin-react": "^6.1.2",
-    "npm-check-updates": "^23.1.0",
-    "oxfmt": "^0.72.0",
-    "oxlint": "^1.87.0",
+    "@vitejs/plugin-react": "^6.3.0",
+    "npm-check-updates": "^23.1.1",
+    "oxfmt": "^0.80.0",
+    "oxlint": "^1.95.0",
     "typescript": "^7.0.2",
-    "vite": "^8.3.3",
+    "vite": "^8.3.8",
     "vite-plugin-monkey": "^8.1.1"
   },
   "engines": {

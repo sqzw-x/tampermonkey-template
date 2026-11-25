@@ -21,8 +21,8 @@
 pnpm install      # 安装依赖
 pnpm dev          # 开发模式（热更新）
 pnpm build        # 构建 dist/*.user.js
-pnpm typecheck    # 类型检查
-pnpm ci           # linter + formatter 检查（CI 使用）
+pnpm typecheck    # 类型检查（src + vite.config.ts）
+pnpm check        # linter + formatter 检查（CI 使用）
 pnpm lint         # Oxlint 自动修复
 pnpm format       # Oxfmt 格式化
 pnpm dep          # 交互式更新依赖
@@ -32,11 +32,11 @@ pnpm dep          # 交互式更新依赖
 
 - [Oxlint](https://oxc.rs/docs/guide/usage/linter) 负责 lint，配置见 `.oxlintrc.json`
 - [Oxfmt](https://oxc.rs/docs/guide/usage/formatter) 负责格式化，配置见 `.oxfmtrc.json`
-- 格式约定与仓库原 Biome 配置保持一致（120 列、双引号），并在保存时自动排序 import
+- 格式约定：120 列宽、双引号，并在保存时自动排序 import
 
 ## UI 组件库
 
-模板不再内置 Ant Design。入口 `src/userscript.tsx` 只挂载了一个 React 根节点，UI 完全自由：
+入口 `src/userscript.tsx` 只挂载了一个 React 根节点，UI 完全自由：
 
 ```bash
 # 例如选择 Ant Design（React 19 需要额外安装兼容补丁）
